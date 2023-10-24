@@ -16,7 +16,6 @@ const items = [
       :key="index"
       mode="after"
       from="rgba(255,255,255,0.1)"
-      size="400"
       class="group w-104 rounded-2xl border border-white/10 bg-white/5 p-2">
       <div class="relative">
         <img

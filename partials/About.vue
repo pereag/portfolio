@@ -61,7 +61,7 @@ const features = [
 
 <template>
   <div id="features" class="scroll-mt-8">
-    <ScrollReveal v-slot="{ isActive }" once trigger="bottom" class="[--duration:500ms]">
+    <ScrollReveal v-slot="{ isActive }" once class="[--duration:500ms]">
       <SectionWrapper>
         <div class="mt-8 lg:mb-16 mb-8">
           <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-y-16">
