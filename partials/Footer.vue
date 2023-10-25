@@ -1,106 +1,108 @@
 <script setup>
-import SectionWrapper from "~/components/SectionWrapper.vue"
-import TikTokIcon from "~/components/Icons/TikTokIcon.vue"
-import XIcon from "~/components/Icons/XIcon.vue"
-import YouTubeIcon from "~/components/Icons/YouTubeIcon.vue"
-import Logo from "~/components/Logo.vue"
+import SectionWrapper from '../components/SectionWrapper.vue';
+import TikTokIcon from '../components/Icons/TikTokIcon.vue';
+import XIcon from '../components/Icons/XIcon.vue';
+import YouTubeIcon from '../components/Icons/YouTubeIcon.vue';
+import Logo from '../components/Logo.vue';
 
 const sections = [
   {
-    title: "Products",
+    title: 'Products',
     items: [
       {
-        title: "Getting started",
-        url: "#",
+        title: 'Getting started',
+        url: '#',
       },
       {
-        title: "Use cases",
-        url: "#",
+        title: 'Use cases',
+        url: '#',
       },
       {
-        title: "API reference",
-        url: "#",
+        title: 'API reference',
+        url: '#',
       },
       {
-        title: "Examples",
-        url: "#",
+        title: 'Examples',
+        url: '#',
       },
       {
-        title: "FAQ",
-        url: "#",
+        title: 'FAQ',
+        url: '#',
       },
     ],
   },
   {
-    title: "Tools",
+    title: 'Tools',
     items: [
       {
-        title: "Invoice AI Scanner",
-        url: "#",
+        title: 'Invoice AI Scanner',
+        url: '#',
       },
       {
-        title: "Bank statement analyzer",
-        url: "#",
+        title: 'Bank statement analyzer',
+        url: '#',
       },
       {
-        title: "Merge PDFs",
-        url: "#",
+        title: 'Merge PDFs',
+        url: '#',
       },
       {
-        title: "PDF to HTML",
-        url: "#",
+        title: 'PDF to HTML',
+        url: '#',
       },
     ],
   },
   {
-    title: "Resources",
+    title: 'Resources',
     items: [
       {
-        title: "Affiliate program",
-        url: "#",
+        title: 'Affiliate program',
+        url: '#',
       },
       {
-        title: "Privacy policy",
-        url: "#",
+        title: 'Privacy policy',
+        url: '#',
       },
       {
-        title: "Company",
-        url: "#",
+        title: 'Company',
+        url: '#',
       },
       {
-        title: "Terms of service",
-        url: "#",
+        title: 'Terms of service',
+        url: '#',
       },
     ],
   },
-]
+];
 
 const icons = [
   {
     component: YouTubeIcon,
-    name: "YouTube",
-    url: "#",
+    name: 'YouTube',
+    url: '#',
   },
   {
     component: XIcon,
-    name: "X / Twitter",
-    url: "#",
+    name: 'X / Twitter',
+    url: '#',
   },
   {
     component: TikTokIcon,
-    name: "TikTok",
-    url: "#",
+    name: 'TikTok',
+    url: '#',
   },
-]
+];
 </script>
 
 <template>
   <div class="pt-8 lg:pt-16">
     <div
       class="relative bg-[radial-gradient(35%_128px_at_50%_0%,theme(backgroundColor.white/5%),transparent)] py-32 lg:px-24 lg:py-32">
-      <div class="absolute inset-x-12 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
+      <div
+        class="absolute inset-x-12 top-0 h-px bg-gradient-to-r from-transparent via-white/30 to-transparent"></div>
 
-      <div class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-zinc-950 p-1.5">
+      <div
+        class="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 rounded-full bg-zinc-950 p-1.5">
         <div class="h-1.5 w-8 rounded-lg bg-white"></div>
       </div>
 
@@ -123,7 +125,9 @@ const icons = [
 
               <ul class="mt-3 space-y-3">
                 <li v-for="item in section.items" :key="item.title">
-                  <a class="text-sm font-light text-white/75 transition hover:text-white" :href="item.url">
+                  <a
+                    class="text-sm font-light text-white/75 transition hover:text-white"
+                    :href="item.url">
                     {{ item.title }}
                   </a>
                 </li>

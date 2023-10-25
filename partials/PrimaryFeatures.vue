@@ -1,13 +1,13 @@
 <script setup>
-import ScrollReveal from "~/components/ScrollReveal.vue"
-import SectionBadge from "~/components/SectionBadge.vue"
-import SectionDescription from "~/components/SectionDescription.vue"
-import SectionHeading from "~/components/SectionHeading.vue"
-import SectionTitle from "~/components/SectionTitle.vue"
-import SectionWrapper from "~/components/SectionWrapper.vue"
-import Documents from "./PrimaryFeatures/Documents.vue"
-import Responses from "./PrimaryFeatures/Responses.vue"
-import References from "./PrimaryFeatures/References.vue"
+import ScrollReveal from '../components/ScrollReveal.vue';
+import SectionBadge from '../components/SectionBadge.vue';
+import SectionDescription from '../components/SectionDescription.vue';
+import SectionHeading from '../components/SectionHeading.vue';
+import SectionTitle from '../components/SectionTitle.vue';
+import SectionWrapper from '../components/SectionWrapper.vue';
+import Documents from './PrimaryFeatures/Documents.vue';
+import Responses from './PrimaryFeatures/Responses.vue';
+import References from './PrimaryFeatures/References.vue';
 </script>
 
 <template>

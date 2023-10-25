@@ -1,8 +1,8 @@
 <script setup>
-import { ChatBubbleLeftRightIcon, UserIcon, DocumentTextIcon } from "@heroicons/vue/24/outline"
-import PrimaryFeatureCard from "~/components/PrimaryFeatureCard.vue"
+import { ChatBubbleLeftRightIcon, UserIcon, DocumentTextIcon } from '@heroicons/vue/24/outline';
+import PrimaryFeatureCard from '~/components/PrimaryFeatureCard.vue';
 
-const dots = new Array(3)
+const dots = new Array(3);
 </script>
 
 <template>
@@ -14,7 +14,8 @@ const dots = new Array(3)
       </div>
 
       <div class="w-9 overflow-hidden">
-        <div class="flex w-max animate-marquee justify-end [animation-direction:reverse] [animation-duration:2s]">
+        <div
+          class="flex w-max animate-marquee justify-end [animation-direction:reverse] [animation-duration:2s]">
           <div v-for="(dot, index) in [...dots, ...dots]" :key="index" class="px-1">
             <div class="h-1 w-1 shrink-0 rounded-full bg-white/40"></div>
           </div>
@@ -23,11 +24,13 @@ const dots = new Array(3)
 
       <div
         class="relative flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-white/5">
-        <ChatBubbleLeftRightIcon class="relative h-8 w-8 fill-cyan-400/10 stroke-[1] text-cyan-400" />
+        <ChatBubbleLeftRightIcon
+          class="relative h-8 w-8 fill-cyan-400/10 stroke-[1] text-cyan-400" />
       </div>
 
       <div class="w-9 overflow-hidden">
-        <div class="flex w-max animate-marquee justify-end [animation-direction:reverse] [animation-duration:2s]">
+        <div
+          class="flex w-max animate-marquee justify-end [animation-direction:reverse] [animation-duration:2s]">
           <div v-for="(dot, index) in [...dots, ...dots]" :key="index" class="px-1">
             <div class="h-1 w-1 shrink-0 rounded-full bg-white/40"></div>
           </div>
@@ -43,8 +46,8 @@ const dots = new Array(3)
     <template #title> Real-time responses </template>
 
     <template #default>
-      Pop the questions, pull out information, or get a quick summary of your documents using our smart AI. It's all
-      instant and tailored for you.
+      Pop the questions, pull out information, or get a quick summary of your documents using our
+      smart AI. It's all instant and tailored for you.
     </template>
   </PrimaryFeatureCard>
 </template>

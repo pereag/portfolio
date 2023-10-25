@@ -7,15 +7,25 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "format": "prettier \"**/*.{js,ts,vue,css}\" --write"
+    "lint": "npx eslint */**.vue",
+    "fix": "npx prettier */**.vue --write; npx eslint */**.vue --fix"
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@types/node": "^18.17.0",
     "autoprefixer": "^10.4.14",
+    "eslint": "^8.52.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-vue": "^9.18.0",
     "nuxt": "^3.6.5",
     "postcss": "^8.4.27",
-    "prettier": "^3.0.2",
+    "prettier": "^3.0.3",
     "prettier-plugin-tailwindcss": "^0.5.3",
     "tailwindcss": "^3.3.3"
   },
@@ -23,6 +33,7 @@
     "@headlessui/vue": "^1.7.16",
     "@heroicons/vue": "^2.0.18",
     "@vueuse/core": "^10.3.0",
-    "mini-svg-data-uri": "^1.4.4"
+    "mini-svg-data-uri": "^1.4.4",
+    "vue": "^3.3.7"
   }
 }

@@ -1,11 +1,11 @@
 <script setup>
-import SectionBadge from "~/components/SectionBadge.vue"
-import SectionDescription from "~/components/SectionDescription.vue"
-import SectionHeading from "~/components/SectionHeading.vue"
-import SectionTitle from "~/components/SectionTitle.vue"
-import SectionWrapperRounded from "~/components/SectionWrapperRounded.vue"
-import Suggestions from "./SecondaryFeatures/Suggestions.vue"
-import Analysis from "./SecondaryFeatures/Analysis.vue"
+import SectionBadge from '../components/SectionBadge.vue';
+import SectionDescription from '../components/SectionDescription.vue';
+import SectionHeading from '../components/SectionHeading.vue';
+import SectionTitle from '../components/SectionTitle.vue';
+import SectionWrapperRounded from '../components/SectionWrapperRounded.vue';
+import Suggestions from './SecondaryFeatures/Suggestions.vue';
+import Analysis from './SecondaryFeatures/Analysis.vue';
 </script>
 
 <template>

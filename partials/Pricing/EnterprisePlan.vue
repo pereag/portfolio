@@ -1,7 +1,12 @@
 <script setup>
-import BaseSpotlightCard from "~/components/BaseSpotlightCard.vue"
+import BaseSpotlightCard from '~/components/BaseSpotlightCard.vue';
 
-const features = ["Dynamic suggestions", "Detailed analysis", "Intelligent summarization", "Key metric identification"]
+const features = [
+  'Dynamic suggestions',
+  'Detailed analysis',
+  'Intelligent summarization',
+  'Key metric identification',
+];
 </script>
 
 <template>
@@ -28,7 +33,9 @@ const features = ["Dynamic suggestions", "Detailed analysis", "Intelligent summa
 
         <div class="mt-8 divide-y divide-white/10 text-sm font-medium text-white/75">
           <template v-for="(feature, index) in features" :key="index">
-            <div v-if="index < 4" class="py-2">{{ feature }}</div>
+            <div v-if="index < 4" class="py-2">
+              {{ feature }}
+            </div>
           </template>
         </div>
 

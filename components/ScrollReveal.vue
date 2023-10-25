@@ -1,16 +1,16 @@
 <script setup>
-import { computed, ref, watch } from "vue"
-import { useElementBounding, useElementVisibility, useWindowSize } from "@vueuse/core"
+import { computed, ref, watch } from 'vue';
+import { useElementBounding, useElementVisibility, useWindowSize } from '@vueuse/core';
 
 const props = defineProps({
   as: {
     type: String,
-    default: "div",
+    default: 'div',
   },
   trigger: {
     type: String,
-    default: "visible",
-    validator: (prop) => ["middle", "top", "visible"].includes(prop),
+    default: 'visible',
+    validator: (prop) => ['middle', 'top', 'visible'].includes(prop),
   },
   once: {
     type: Boolean,
@@ -20,39 +20,40 @@ const props = defineProps({
     type: Number,
     default: 0,
   },
-})
+});
 
-const container = ref()
+const container = ref();
 
-const isActive = ref(false)
+const isActive = ref(false);
 
-const { y, height } = useElementBounding(container)
-const { height: windowHeight } = useWindowSize()
-const isVisible = useElementVisibility(container)
+const { y, height } = useElementBounding(container);
+const { height: windowHeight } = useWindowSize();
+const isVisible = useElementVisibility(container);
 
-const progress = computed(() => (-y.value / height.value) * 2)
+const progress = computed(() => (-y.value / height.value) * 2);
 
-const scrollRate = computed(() => {
-  return (y.value + height.value / 2 - windowHeight.value / 2) / (windowHeight.value / 2)
-})
+const scrollRate = computed(
+  () => (y.value + height.value / 2 - windowHeight.value / 2) / (windowHeight.value / 2),
+);
 
 const isIntersecting = computed(() => {
-  if (props.trigger == "top") {
-    return isVisible.value && y.value <= 0
-  } else if (props.trigger == "middle") {
-    return y.value > windowHeight.value / 2 - height.value && y.value <= windowHeight.value / 2
+  if (props.trigger == 'top') {
+    return isVisible.value && y.value <= 0;
+  }
+  if (props.trigger == 'middle') {
+    return y.value > windowHeight.value / 2 - height.value && y.value <= windowHeight.value / 2;
   }
 
-  return isVisible.value && y.value <= windowHeight.value - props.offset
-})
+  return isVisible.value && y.value <= windowHeight.value - props.offset;
+});
 
 watch(isIntersecting, () => {
   if (props.once && isIntersecting.value) {
-    isActive.value = true
+    isActive.value = true;
   } else if (!props.once) {
-    isActive.value = isIntersecting.value
+    isActive.value = isIntersecting.value;
   }
-})
+});
 </script>
 
 <template>

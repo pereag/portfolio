@@ -1,5 +1,5 @@
 <script setup>
-import SectionWrapper from "~/components/SectionWrapper.vue"
+import SectionWrapper from '~/components/SectionWrapper.vue';
 </script>
 
 <template>
@@ -16,8 +16,9 @@ import SectionWrapper from "~/components/SectionWrapper.vue"
 
           <br />
 
-         
-          <span class="bg-gradient-to-br from-white/90 to-white/30 bg-clip-text text-transparent">Vue.js + React.js</span>
+          <span class="bg-gradient-to-br from-white/90 to-white/30 bg-clip-text text-transparent"
+            >Vue.js + React.js</span
+          >
         </h1>
 
         <!-- subtitle -->
@@ -27,10 +28,9 @@ import SectionWrapper from "~/components/SectionWrapper.vue"
 
         <!-- cta -->
         <div class="mt-8 flex flex-col items-center justify-center gap-4 lg:flex-row">
-
           <SpotlightButton>
             <span
-              class="relative mt-px bg-gradient-to-b from-white/25 to-white bg-clip-text font-mona text-lg font-medium text-transparent transition-all duration-200">
+              class="font-mona relative mt-px bg-gradient-to-b from-white/25 to-white bg-clip-text text-lg font-medium text-transparent transition-all duration-200">
               Mon Portfolio
             </span>
           </SpotlightButton>

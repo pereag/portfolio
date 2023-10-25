@@ -1,24 +1,24 @@
 <script setup>
-import { ref } from "vue"
-import { Bars2Icon, XMarkIcon } from "@heroicons/vue/24/outline"
-import SectionWrapper from "~/components/SectionWrapper.vue"
+import { ref } from 'vue';
+import { Bars2Icon, XMarkIcon } from '@heroicons/vue/24/outline';
+import SectionWrapper from '../components/SectionWrapper.vue';
 
-const showMenu = ref(false)
+const showMenu = ref(false);
 
 const links = [
   {
-    title: "A propos de moi",
-    url: "#about",
+    title: 'A propos de moi',
+    url: '#about',
   },
   {
-    title: "Portfolio",
-    url: "#portfolio",
+    title: 'Portfolio',
+    url: '#portfolio',
   },
   {
-    title: "Contact",
-    url: "#contact",
+    title: 'Contact',
+    url: '#contact',
   },
-]
+];
 </script>
 
 <template>
@@ -28,8 +28,8 @@ const links = [
         <nav class="flex items-center justify-between py-4">
           <!-- logo -->
           <div>
-            <a href="#" class=" text-xl inline-flex items-center gap-2">
-              Valentin<span class="font-bold -ml-2">Perello.fr</span>
+            <a href="#" class="inline-flex items-center gap-2 text-xl">
+              Valentin<span class="-ml-2 font-bold">Perello.fr</span>
             </a>
           </div>
 
@@ -43,7 +43,10 @@ const links = [
             </a>
           </div>
 
-          <button @click="showMenu = !showMenu" type="button" class="relative ml-auto inline-flex lg:hidden">
+          <button
+            @click="showMenu = !showMenu"
+            type="button"
+            class="relative ml-auto inline-flex lg:hidden">
             <Bars2Icon
               :class="{
                 'rotate-180 opacity-0': showMenu,
@@ -61,7 +64,9 @@ const links = [
       <div v-show="showMenu" class="py-4">
         <ul class="flex flex-col items-center space-y-4">
           <li v-for="(link, index) in links" :key="index">
-            <a :href="link.url" class="inline-block text-base font-medium text-white/75 transition hover:text-white">
+            <a
+              :href="link.url"
+              class="inline-block text-base font-medium text-white/75 transition hover:text-white">
               {{ link.title }}
             </a>
           </li>

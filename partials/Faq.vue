@@ -1,36 +1,36 @@
 <script setup>
-import { XMarkIcon } from "@heroicons/vue/24/outline"
-import DetailsContent from "~/components/DetailsContent.vue"
-import DetailsGroup from "~/components/DetailsGroup.vue"
-import DetailsItem from "~/components/DetailsItem.vue"
-import SectionBadge from "~/components/SectionBadge.vue"
-import SectionDescription from "~/components/SectionDescription.vue"
-import SectionHeading from "~/components/SectionHeading.vue"
-import SectionTitle from "~/components/SectionTitle.vue"
-import SectionWrapperRounded from "~/components/SectionWrapperRounded.vue"
+import { XMarkIcon } from '@heroicons/vue/24/outline';
+import DetailsContent from '../components/DetailsContent.vue';
+import DetailsGroup from '../components/DetailsGroup.vue';
+import DetailsItem from '../components/DetailsItem.vue';
+import SectionBadge from '../components/SectionBadge.vue';
+import SectionDescription from '../components/SectionDescription.vue';
+import SectionHeading from '../components/SectionHeading.vue';
+import SectionTitle from '../components/SectionTitle.vue';
+import SectionWrapperRounded from '../components/SectionWrapperRounded.vue';
 
 const questions = [
   {
-    title: "What is Recharger?",
+    title: 'What is Recharger?',
     content:
-      "Recharger is an innovative app that allows you to chat directly with your PDF documents to extract the information you need. It simplifies document understanding and helps you save valuable time.",
+      'Recharger is an innovative app that allows you to chat directly with your PDF documents to extract the information you need. It simplifies document understanding and helps you save valuable time.',
   },
   {
-    title: "How does Recharger work?",
+    title: 'How does Recharger work?',
     content:
-      "Recharger uses advanced AI tech to understand the content of your PDFs. Just upload your document, ask the app questions as if you were chatting with a person, and get accurate and instant answers.",
+      'Recharger uses advanced AI tech to understand the content of your PDFs. Just upload your document, ask the app questions as if you were chatting with a person, and get accurate and instant answers.',
   },
   {
-    title: "What types of documents can I use with Recharger?",
+    title: 'What types of documents can I use with Recharger?',
     content:
-      "Recharger works with any PDF document, making it a versatile tool — whether you're reading complex contracts, lengthy reports, or detailed user manuals.",
+      'Recharger works with any PDF document, making it a versatile tool — whether you\'re reading complex contracts, lengthy reports, or detailed user manuals.',
   },
   {
-    title: "Is there a limit to the number of documents I can upload?",
+    title: 'Is there a limit to the number of documents I can upload?',
     content:
-      "The number of documents you can upload depends on the type of account you have. For specific details, please refer to our Pricing section.",
+      'The number of documents you can upload depends on the type of account you have. For specific details, please refer to our Pricing section.',
   },
-]
+];
 </script>
 
 <template>
@@ -62,7 +62,9 @@ const questions = [
           v-slot="{ isActive, toggle }"
           class="group border-b border-white/10">
           <div class="flex cursor-pointer items-center py-6" @click="toggle">
-            <div :class="[isActive ? 'text-white' : 'text-white/75 hover:text-white']" class="transition">
+            <div
+              :class="[isActive ? 'text-white' : 'text-white/75 hover:text-white']"
+              class="transition">
               {{ question.title }}
             </div>
 

@@ -1,14 +1,14 @@
 <script setup>
-import SpotlightCard from "~/components/SpotlightCard.vue"
+import SpotlightCard from '~/components/SpotlightCard.vue';
 
 const features = [
-  "Real-time chat",
-  "Dynamic suggestions",
-  "Detailed analysis",
-  "Chat history",
-  "Intelligent summarization",
-  "Key metric identification",
-]
+  'Real-time chat',
+  'Dynamic suggestions',
+  'Detailed analysis',
+  'Chat history',
+  'Intelligent summarization',
+  'Key metric identification',
+];
 </script>
 
 <template>
