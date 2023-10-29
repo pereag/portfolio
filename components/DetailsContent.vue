@@ -1,13 +1,11 @@
 <script setup>
-import {
-  onMounted, computed, inject, ref,
-} from 'vue';
-import { useElementSize } from '@vueuse/core';
+import { onMounted, computed, inject, ref } from "vue";
+import { useElementSize } from "@vueuse/core";
 
 defineProps({
   as: {
     type: String,
-    default: 'div',
+    default: "div",
   },
 });
 
@@ -20,10 +18,10 @@ onMounted(() => {
 });
 
 const { height: targetHeight } = useElementSize(content, undefined, {
-  box: 'border-box',
+  box: "border-box",
 });
 
-const isActive = inject('isActive');
+const isActive = inject("isActive");
 
 const height = computed(() => (isActive.value ? targetHeight.value : 0));
 </script>

@@ -1,6 +1,6 @@
 <script setup>
-import SpotlightCard from '@/components/SpotlightCard.vue';
-import Valentin from '@/assets/images/yourFuturDev.jpg';
+import SpotlightCard from "@/components/SpotlightCard.vue";
+import Valentin from "@/assets/images/yourFuturDev.jpg";
 
 const items = [
   {

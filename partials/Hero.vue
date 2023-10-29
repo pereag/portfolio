@@ -1,5 +1,5 @@
 <script setup>
-import SectionWrapper from '~/components/SectionWrapper.vue';
+import SectionWrapper from "~/components/SectionWrapper.vue";
 </script>
 
 <template>
@@ -23,7 +23,7 @@ import SectionWrapper from '~/components/SectionWrapper.vue';
 
         <!-- subtitle -->
         <h2 class="mt-8 max-w-xl text-center text-lg text-white/60 lg:text-xl">
-          L'informatique a toujour était ma passion, aujourd'hui c'est devenu mon travail.
+          L'informatique a toujours été ma passion, aujourd'hui c'est devenu mon travail.
         </h2>
 
         <!-- cta -->
@@ -31,7 +31,7 @@ import SectionWrapper from '~/components/SectionWrapper.vue';
           <SpotlightButton>
             <span
               class="font-mona relative mt-px bg-gradient-to-b from-white/25 to-white bg-clip-text text-lg font-medium text-transparent transition-all duration-200">
-              Mon Portfolio
+              Mon experiences
             </span>
           </SpotlightButton>
         </div>

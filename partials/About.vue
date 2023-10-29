@@ -8,49 +8,55 @@ import {
   CommandLineIcon,
   DocumentTextIcon,
   QueueListIcon,
-} from '@heroicons/vue/24/outline';
-import ScrollReveal from '../components/ScrollReveal.vue';
-import SectionWrapper from '../components/SectionWrapper.vue';
+} from "@heroicons/vue/24/outline";
+import ScrollReveal from "../components/ScrollReveal.vue";
+import SectionWrapper from "../components/SectionWrapper.vue";
 
 const features = [
   {
-    title: 'Intégration',
-    description: 'Transform complex content into understandable format',
+    title: "Intégration",
+    description:
+      "Traductions des designs en code HTML/CSS/SCSS pour créer des sites web fonctionnels et esthétiques, garantissant ainsi une expérience utilisateur optimale. Mon rôle est de donner vie à la créativité en ligne.",
     icon: CommandLineIcon,
   },
   {
-    title: 'Javascript',
-    description: 'Rapidly encapsulate main ideas and key points',
+    title: "Javascript",
+    description:
+      "En utilisant JavaScript, j'ai implémenté des algorithmes pour résoudre divers problèmes et défis informatiques. Mon travail consistait à concevoir des séquences d'instructions logiques et efficaces pour accomplir des tâches telles que le tri de données, la recherche, la manipulation de chaînes de caractères, et bien d'autres.",
     icon: ArrowsPointingInIcon,
   },
   {
-    title: 'React.js',
-    description: 'Interact directly and personally with your document',
+    title: "React.js",
+    description: "Je code en React.js pour créer des interfaces web dynamiques et interactives.",
     icon: ChatBubbleBottomCenterTextIcon,
   },
   {
-    title: 'Vue.js',
-    description: 'Get insightful suggestions based on content',
+    title: "Vue.js",
+    description:
+      "Avec Vue.js, je développe des interfaces utilisateur réactives pour les applications web, en utilisant des composants modulaires pour simplifier le développement et offrir une expérience utilisateur fluide. Mon rôle est de maximiser l'efficacité de développement tout en garantissant des applications web performantes et réactives.",
     icon: QueueListIcon,
   },
   {
-    title: 'Swift',
-    description: 'Extract and calculate vital statistics instantly',
+    title: "Swift",
+    description:
+      "Développement d'applications pour les appareils Apple. Des applications iOS, macOS, watchOS et tvOS.",
     icon: ChartBarIcon,
   },
   {
-    title: 'Wordpress',
-    description: 'Simply drag and drop your PDFs to start chatting',
+    title: "Wordpress",
+    description:
+      "Pendant deux ans, j'ai exercé la fonction de développeur, en créant des thèmes personnalisés pour des sites vitrines avec WordPress.",
     icon: ArrowUpOnSquareIcon,
   },
   {
-    title: 'Testes unitaires',
-    description: 'Simplify legal jargon in contracts and official documents',
+    title: "Testes unitaires",
+    description: "Utilisation de Jest et vitest.",
     icon: DocumentTextIcon,
   },
   {
-    title: 'Design web',
-    description: 'Dive deep into documents for comprehensive insights.',
+    title: "Design web",
+    description:
+      "Conception de sites web attractifs et ergonomiques, tout en veillant à ce qu'ils correspondent aux besoins et aux préférences des clients.",
     icon: ArrowTrendingUpIcon,
   },
 ];

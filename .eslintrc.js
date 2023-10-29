@@ -4,33 +4,33 @@ module.exports = {
     es2021: true,
   },
   extends: [
-    'eslint:recommended',
-    'plugin:vue/vue3-essential',
-    'plugin:nuxt/recommended',
-    'prettier',
-    'airbnb-base',
+    "eslint:recommended",
+    "plugin:vue/vue3-essential",
+    "plugin:nuxt/recommended",
+    "prettier",
   ],
   overrides: [
     {
       env: {
         node: true,
       },
-      files: ['.eslintrc.{js,cjs}'],
+      files: [".eslintrc.{js,cjs}"],
       parserOptions: {
-        sourceType: 'script',
+        sourceType: "script",
       },
     },
   ],
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
+    ecmaVersion: "latest",
+    sourceType: "module",
   },
-  plugins: ['vue'],
-  ignorePatterns: ['/tailwind.config.js'],
+  plugins: ["vue", "prettier"],
+  ignorePatterns: ["/tailwind.config.js"],
   rules: {
-    semi: ['error', 'always'],
-    quotes: ['error', 'single'],
-    'vue/multi-word-component-names': 'off',
-    'import/no-extraneous-dependencies': ['error', { devDependencies: false, optionalDependencies: false, peerDependencies: false }],
+    semi: ["error", "always"],
+    quotes: ["error", "double"],
+    "vue/multi-word-component-names": "off",
+    "import/no-extraneous-dependencies": "off",
+    "prettier/prettier": "error",
   },
 };

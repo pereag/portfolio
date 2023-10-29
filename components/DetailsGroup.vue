@@ -1,5 +1,5 @@
 <script setup>
-import { provide, onMounted, ref } from 'vue';
+import { provide, onMounted, ref } from "vue";
 
 const container = ref();
 
@@ -19,7 +19,7 @@ onMounted(() => {
   children.value = Array.from(container.value.children);
 });
 
-provide('details-context', {
+provide("details-context", {
   peers: children,
   activeItem,
   setActive,

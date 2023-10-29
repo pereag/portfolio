@@ -1,22 +1,22 @@
 <script setup>
-import { ref } from 'vue';
-import { Bars2Icon, XMarkIcon } from '@heroicons/vue/24/outline';
-import SectionWrapper from '../components/SectionWrapper.vue';
+import { ref } from "vue";
+import { Bars2Icon, XMarkIcon } from "@heroicons/vue/24/outline";
+import SectionWrapper from "../components/SectionWrapper.vue";
 
 const showMenu = ref(false);
 
 const links = [
   {
-    title: 'A propos de moi',
-    url: '#about',
+    title: "A propos de moi",
+    url: "#about",
   },
   {
-    title: 'Portfolio',
-    url: '#portfolio',
+    title: "Experiences",
+    url: "#Experiences",
   },
   {
-    title: 'Contact',
-    url: '#contact',
+    title: "Contact",
+    url: "#contact",
   },
 ];
 </script>

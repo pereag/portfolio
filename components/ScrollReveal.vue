@@ -1,16 +1,16 @@
 <script setup>
-import { computed, ref, watch } from 'vue';
-import { useElementBounding, useElementVisibility, useWindowSize } from '@vueuse/core';
+import { computed, ref, watch } from "vue";
+import { useElementBounding, useElementVisibility, useWindowSize } from "@vueuse/core";
 
 const props = defineProps({
   as: {
     type: String,
-    default: 'div',
+    default: "div",
   },
   trigger: {
     type: String,
-    default: 'visible',
-    validator: (prop) => ['middle', 'top', 'visible'].includes(prop),
+    default: "visible",
+    validator: (prop) => ["middle", "top", "visible"].includes(prop),
   },
   once: {
     type: Boolean,
@@ -37,10 +37,10 @@ const scrollRate = computed(
 );
 
 const isIntersecting = computed(() => {
-  if (props.trigger == 'top') {
+  if (props.trigger == "top") {
     return isVisible.value && y.value <= 0;
   }
-  if (props.trigger == 'middle') {
+  if (props.trigger == "middle") {
     return y.value > windowHeight.value / 2 - height.value && y.value <= windowHeight.value / 2;
   }
 

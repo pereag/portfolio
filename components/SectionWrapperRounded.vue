@@ -1,5 +1,5 @@
 <script setup>
-import SectionWrapper from './SectionWrapper.vue';
+import SectionWrapper from "./SectionWrapper.vue";
 </script>
 
 <template>

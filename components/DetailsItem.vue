@@ -1,26 +1,26 @@
 <script setup>
-import {
-  computed, provide, inject, ref,
-} from 'vue';
+import { computed, provide, inject, ref } from "vue";
 
 defineProps({
   as: {
     type: String,
-    default: 'div',
+    default: "div",
   },
 });
 
 const container = ref();
 
-const context = inject('details-context');
+const context = inject("details-context");
 
-const index = computed(() => (context.peers?.value ? context.peers.value.indexOf(container.value) : -1));
+const index = computed(() =>
+  context.peers?.value ? context.peers.value.indexOf(container.value) : -1,
+);
 
 const isActive = computed(() => index.value == context.activeItem.value);
 
 const toggle = () => context.setActive(index.value);
 
-provide('isActive', isActive);
+provide("isActive", isActive);
 </script>
 
 <template>

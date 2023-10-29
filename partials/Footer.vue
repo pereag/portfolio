@@ -1,75 +1,75 @@
 <script setup>
-import SectionWrapper from '../components/SectionWrapper.vue';
-import TikTokIcon from '../components/Icons/TikTokIcon.vue';
-import XIcon from '../components/Icons/XIcon.vue';
-import YouTubeIcon from '../components/Icons/YouTubeIcon.vue';
-import Logo from '../components/Logo.vue';
+import SectionWrapper from "../components/SectionWrapper.vue";
+import TikTokIcon from "../components/Icons/TikTokIcon.vue";
+import XIcon from "../components/Icons/XIcon.vue";
+import YouTubeIcon from "../components/Icons/YouTubeIcon.vue";
+import Logo from "../components/Logo.vue";
 
 const sections = [
   {
-    title: 'Products',
+    title: "Products",
     items: [
       {
-        title: 'Getting started',
-        url: '#',
+        title: "Getting started",
+        url: "#",
       },
       {
-        title: 'Use cases',
-        url: '#',
+        title: "Use cases",
+        url: "#",
       },
       {
-        title: 'API reference',
-        url: '#',
+        title: "API reference",
+        url: "#",
       },
       {
-        title: 'Examples',
-        url: '#',
+        title: "Examples",
+        url: "#",
       },
       {
-        title: 'FAQ',
-        url: '#',
+        title: "FAQ",
+        url: "#",
       },
     ],
   },
   {
-    title: 'Tools',
+    title: "Tools",
     items: [
       {
-        title: 'Invoice AI Scanner',
-        url: '#',
+        title: "Invoice AI Scanner",
+        url: "#",
       },
       {
-        title: 'Bank statement analyzer',
-        url: '#',
+        title: "Bank statement analyzer",
+        url: "#",
       },
       {
-        title: 'Merge PDFs',
-        url: '#',
+        title: "Merge PDFs",
+        url: "#",
       },
       {
-        title: 'PDF to HTML',
-        url: '#',
+        title: "PDF to HTML",
+        url: "#",
       },
     ],
   },
   {
-    title: 'Resources',
+    title: "Resources",
     items: [
       {
-        title: 'Affiliate program',
-        url: '#',
+        title: "Affiliate program",
+        url: "#",
       },
       {
-        title: 'Privacy policy',
-        url: '#',
+        title: "Privacy policy",
+        url: "#",
       },
       {
-        title: 'Company',
-        url: '#',
+        title: "Company",
+        url: "#",
       },
       {
-        title: 'Terms of service',
-        url: '#',
+        title: "Terms of service",
+        url: "#",
       },
     ],
   },
@@ -78,18 +78,18 @@ const sections = [
 const icons = [
   {
     component: YouTubeIcon,
-    name: 'YouTube',
-    url: '#',
+    name: "YouTube",
+    url: "#",
   },
   {
     component: XIcon,
-    name: 'X / Twitter',
-    url: '#',
+    name: "X / Twitter",
+    url: "#",
   },
   {
     component: TikTokIcon,
-    name: 'TikTok',
-    url: '#',
+    name: "TikTok",
+    url: "#",
   },
 ];
 </script>

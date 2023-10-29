@@ -1,5 +1,5 @@
 <script setup>
-import BaseSpotlightCard from './BaseSpotlightCard.vue';
+import BaseSpotlightCard from "./BaseSpotlightCard.vue";
 </script>
 
 <template>

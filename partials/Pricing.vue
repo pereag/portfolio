@@ -1,12 +1,12 @@
 <script setup>
-import SectionBadge from '../components/SectionBadge.vue';
-import SectionDescription from '../components/SectionDescription.vue';
-import SectionHeading from '../components/SectionHeading.vue';
-import SectionTitle from '../components/SectionTitle.vue';
-import SectionWrapper from '../components/SectionWrapper.vue';
-import BasicPlan from './Pricing/BasicPlan.vue';
-import StarterPlan from './Pricing/StarterPlan.vue';
-import EnterprisePlan from './Pricing/EnterprisePlan.vue';
+import SectionBadge from "../components/SectionBadge.vue";
+import SectionDescription from "../components/SectionDescription.vue";
+import SectionHeading from "../components/SectionHeading.vue";
+import SectionTitle from "../components/SectionTitle.vue";
+import SectionWrapper from "../components/SectionWrapper.vue";
+import BasicPlan from "./Pricing/BasicPlan.vue";
+import StarterPlan from "./Pricing/StarterPlan.vue";
+import EnterprisePlan from "./Pricing/EnterprisePlan.vue";
 </script>
 
 <template>
