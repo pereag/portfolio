@@ -1,28 +1,27 @@
 <script setup>
-import SecondaryFeatureCard from '~/components/SecondaryFeatureCard.vue';
+import SecondaryFeatureCard from "~/components/SecondaryFeatureCard.vue";
 
 const suggestions = [
-  'Extract profit metrics from the financial report',
-  'Extract the key findings',
-  'Identify the milestones in the project plan',
-  'Find the warranty conditions',
+  "Bac+3 Développeur en application",
+  "Bac+2 Designer web",
+  "Bac+2 Développeur intégrateur web",
 ];
 </script>
 
 <template>
   <SecondaryFeatureCard>
     <div class="p-6 lg:p-8">
-      <div class="text-lg text-white">Dynamic suggestions</div>
+      <div class="text-lg text-white">Formations</div>
 
       <p class="mt-4 font-light leading-relaxed text-white/75">
-        Recharger automatically gives you helpful hints and guesses what you might ask next. This
-        makes extracting data from your documents more intuitive and efficient.
+        Du design au Développement, les formations que j'ai fait ces 10 dernères années mon permis
+        d'accerire une base solide pour mon poste actuel.
       </p>
     </div>
 
-    <div class="mt-2 pl-6 md:pl-8">
+    <div class="mt-2 pl-6 pr-6 md:pl-8 md:pr-8">
       <div
-        class="flex w-full flex-col items-start gap-3 rounded-tl-xl border-white/10 bg-white/5 p-3">
+        class="flex w-full flex-col items-start gap-3 rounded-tl-xl rounded-tr-xl border-white/10 bg-white/5 p-3">
         <div
           v-for="(suggestion, index) in suggestions"
           :key="index"

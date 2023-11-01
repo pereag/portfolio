@@ -19,12 +19,6 @@ import Analysis from "./SecondaryFeatures/Analysis.vue";
 
         <template #faded>Pour en arriver là aujourd'hui</template>
       </SectionTitle>
-
-      <SectionDescription>
-        Get insightful suggestions based on content you provide.
-        <br class="hidden lg:block" />
-        Extract and calculate key metrics from your reports instantly.
-      </SectionDescription>
     </SectionHeading>
 
     <div class="mt-8 grid gap-4 lg:mt-16 lg:grid-cols-2 lg:gap-8">
