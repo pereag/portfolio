@@ -3,8 +3,8 @@ import {
   DocumentTextIcon,
   ClipboardDocumentCheckIcon,
   DocumentIcon,
-} from '@heroicons/vue/24/outline';
-import PrimaryFeatureCard from '~/components/PrimaryFeatureCard.vue';
+} from "@heroicons/vue/24/outline";
+import PrimaryFeatureCard from "~/components/PrimaryFeatureCard.vue";
 
 const dots = new Array(3);
 </script>

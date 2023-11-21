@@ -1,6 +1,6 @@
 <script setup>
-import { ChatBubbleLeftRightIcon, UserIcon, DocumentTextIcon } from '@heroicons/vue/24/outline';
-import PrimaryFeatureCard from '~/components/PrimaryFeatureCard.vue';
+import { ChatBubbleLeftRightIcon, UserIcon, DocumentTextIcon } from "@heroicons/vue/24/outline";
+import PrimaryFeatureCard from "~/components/PrimaryFeatureCard.vue";
 
 const dots = new Array(3);
 </script>
